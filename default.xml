@@ -19,7 +19,8 @@
   <project remote="jumpnowtek" revision="729ef206d51b0e350cab1d9f9972ec4a3cab7a62" upstream="sumo" name="meta-rpi" path="rpi/meta-rpi"/>
 
   <project remote="custom" revision="master" name="zepellin-layer" path="rpi/meta-zepellin">
-	<copyfile dest="README" src="README"/>
+	<copyfile dest="README.md" src="README.md"/>
+	<copyfile dest="setup-environment.sh" src="setup-environment.sh"/>
   </project>
 
 </manifest>
