@@ -12,12 +12,14 @@ To get the BSP you need to have repo installed and use it as:
 
 At first install repo:
 
+[source,console]
 $ mkdir ~/bin
 $ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 $ chmod a+x ~/bin/repo
 
 Initialize your BSP:
 
+[source,console]
 $ PATH=${PATH}:~/bin
 $ mkdir ~/zepellin-project
 $ cd ~/zepellin-project
