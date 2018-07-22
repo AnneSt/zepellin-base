@@ -3,22 +3,21 @@
 
   <default sync-j="4" revision="sumo"/>
 
-  <remote fetch="https://github.com/openembedded/meta-openembedded.git" name="openembedded"/>
-  <remote fetch="git://git.yoctoproject.org/meta-security"  name="security"/>
-  <remote fetch="git://git.yoctoproject.org/meta-raspberrypi"     name="rpi"/>
-  <remote fetch="https://github.com/meta-qt5/meta-qt5"	name="QT5"/>
+  <remote fetch="https://github.com/openembedded" name="openembedded"/>
+  <remote fetch="https://git.yoctoproject.org/git"  name="yocto"/>
+  <remote fetch="git://github.com/meta-qt5"	name="QT5"/>
 
-  <remote fetch="git://github.com/jumpnow/meta-rpi"  name="jumpnowtek"/>
-  <remote fetch="https://github.com/AnneSt/zepellin-layer"  name="zepellin-layer"/>
+  <remote fetch="https://github.com/jumpnow"  name="jumpnowtek"/>
+  <remote fetch="https://github.com/AnneSt"  name="custom"/>
 
   <project remote="openembedded" revision="master" upstream="sumo" name="meta-openembedded" path="poky-sumo/meta-openembedded"/>
-  <project remote="security"  revision="master" upstream="sumo" name="meta-security" path="poky-sumo/meta-security"/>
-  <project remote="rpi" revision="master" upstream="sumo" name="meta-raspberrypi" path="poky-sumo/meta-raspberrypi"/>
+  <project remote="yocto"  revision="master" upstream="sumo" name="meta-security" path="poky-sumo/meta-security"/>
+  <project remote="yocto" revision="master" upstream="sumo" name="meta-raspberrypi" path="poky-sumo/meta-raspberrypi"/>
   <project remote="QT5" revision="master" upstream="sumo" name="meta-qt5" path="poky-sumo/meta-qt5"/>
 
   <project remote="jumpnowtek" revision="master" upstream="sumo" name="meta-rpi" path="rpi/meta-rpi"/>
 
-  <project remote="zepellin-layer" revision="master" name="zepellin-layer" path="rpi/meta-zepellin">
+  <project remote="custom" revision="master" name="zepellin-layer" path="rpi/meta-zepellin">
 	<copyfile dest="README" src="README"/>
   </project>
 
