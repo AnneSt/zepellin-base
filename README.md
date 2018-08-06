@@ -48,5 +48,9 @@ You will be stand in the build-direcotry. Now you can build your image.
 ```
 $ bitbake base-image
 ```
+## Build your first SDK
 
+```
+$ bitbake base-image -c populate_sdk
+```
 
