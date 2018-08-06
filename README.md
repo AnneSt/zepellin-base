@@ -46,7 +46,7 @@ You will be stand in the build-direcotry. Now you can build your image.
 ## Build your first Image
 
 ```
-$ bitbake console-image
+$ bitbake base-image
 ```
 
 
