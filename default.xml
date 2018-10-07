@@ -8,19 +8,15 @@
   <remote fetch="git://github.com/meta-qt5"	name="QT5"/>
   <remote fetch="https://github.com/bmwcarit" name="ros"/>
 
-  <remote fetch="https://github.com/jumpnow"  name="jumpnowtek"/>
   <remote fetch="https://github.com/AnneSt"  name="custom"/>
 
   <project remote="yocto" revision="96fbd39ba32362416c18d90bb7a81eb6a76912e0" upstream="sumo" name="poky" path="poky-sumo"/>
   <project remote="openembedded" revision="b0950aeff5b630256bb5e25ca15f4d59c115e7c1" upstream="sumo" name="meta-openembedded" path="poky-sumo/meta-openembedded"/>
   <project remote="yocto" revision="1e4b45ca888188b4eb838cb29b501ee004237552" upstream="sumo" name="meta-security" path="poky-sumo/meta-security"/>
-  <project remote="yocto" revision="cdb2dad529ba102feabeac4e4f58a09fe76edfd1" upstream="sumo" name="meta-raspberrypi" path="poky-sumo/meta-raspberrypi"/>
   <project remote="QT5" revision="4b96f70a083eacfc4ff4a45d4efbb2d131f88c82" upstream="sumo" name="meta-qt5" path="poky-sumo/meta-qt5"/>
-  
   <project remote="ros" revision="ad00e80bd424095c0de08590c5d0df87091c36ae" upstream="master" name="meta-ros" path="poky-sumo/meta-ros"/>
-  	
-  <project remote="jumpnowtek" revision="729ef206d51b0e350cab1d9f9972ec4a3cab7a62" upstream="sumo" name="meta-rpi" path="rpi/meta-rpi"/>
-
+	
+  <project remote="yocto" revision="cdb2dad529ba102feabeac4e4f58a09fe76edfd1" upstream="sumo" name="meta-raspberrypi" path="rpi/meta-raspberrypi"/>
   <project remote="custom" revision="master" name="zepellin-layer" path="rpi/meta-zepellin">
 	<copyfile dest="README.md" src="README.md"/>
 	<copyfile dest="setup-environment.sh" src="setup-environment.sh"/>
